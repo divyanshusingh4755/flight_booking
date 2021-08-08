@@ -1,0 +1,251 @@
+.card{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-heading{
+    margin-bottom: 20px;
+    font-size: 24px;
+    height: 26px;
+    width: 150px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.flight-trip{
+    background: #ffffff;
+    border-radius: 50px;
+    width: 210px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.flight-trip .flight-trip-switch{
+    font-size: 16px;
+    line-height: 21px;
+    color: #647AA1;
+    cursor: pointer;
+    margin-right: 10px ;
+}
+
+.flight-trip .flight-trip-switch.active{
+    background: #2276E3;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.search-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-card-inner input[type="search"]{
+    height: 50px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    outline: none;
+    width: 196px;
+}
+
+.search-card-inner input[type="text"]{
+    height: 27px;
+    color: #647AA1;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    outline: none;
+    width: 150px;
+}
+
+.search-button{
+    font-size: 16px;
+    line-height: 1.33;
+    padding: 8px 16px;
+    margin-left: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: #2276E3;
+    color: #ffffff;
+    background: #2276E3;
+    cursor: pointer;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.filter-card{
+    background: #ffffff;
+    width: 240px;
+    padding: 10px;
+    margin-right: 20px;
+    height: auto;
+}
+
+.filter-heading{
+    color: #5F5F5F;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-heading:first-child{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.filter-line{
+    color: #5F5F5F;
+    width: 50px;
+    margin-left: 7px;
+}
+
+input[type="range"]{
+    margin-left: 10px;
+}
+
+.range-slider{
+    margin-left: 10px;
+}
+
+.content-card{
+    width: 680px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.content-card-half{
+    width: 340px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.content-card-data{
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.content-card-data:first-child{
+    margin-top: 0px;
+}
+
+.image-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.image{
+    width: 28px;
+    height: 28px;
+}
+
+.image-text{
+    font-size: 8px;
+    color: #77779E;
+    width: 20px;
+}
+
+.country{
+    font-size: 14px;
+    line-height: 14px;
+    color: #77779E;
+}
+
+.time{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.travel-time{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.price{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.suggestion-from{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #000000;
+    background: #ffffff;
+    width: 360px;
+    height: auto;
+    max-height: 350px;
+    overflow-y: scroll;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    transform: translate(298px, 217px);
+}
+
+.suggestion-from-data{
+    list-style-type: none;
+    color: #77779E;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.suggestion-from-data:hover{
+    background: #f2f2f2;
+    color: #000000;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.suggestion-destination{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #000000;
+    background: #ffffff;
+    width: 370px;
+    height: auto;
+    max-height: 350px;
+    overflow-y: scroll;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    transform: translate(493px, 217px);
+}
+
+.suggestion-destination-data{
+    list-style-type: none;
+    color: #77779E;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.suggestion-destination-data:hover{
+    background: #f2f2f2;
+    color: #000000;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
