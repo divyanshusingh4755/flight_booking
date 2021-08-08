@@ -4,9 +4,18 @@ var mongoose = require("mongoose")
 var Airports = require("./Routes/Airports");
 var Flights = require("./Routes/Flights");
 
-var app = express();
+const app = express();
+
+app.use(express.json({ limit: "30mb", extended: true }));
+app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
-app.use(express.json({ limit: '200mb' }));
+
+app.use('/api', Airports);
+app.use('/api', Flights);
+
+app.get("/", (req, res) => {
+    res.send("Hello to Flight Booking API")
+})
 
 
 mongoose.connect('mongodb+srv://divyanshu:itsmywish@cluster0.5wif7.mongodb.net/Cluster0?retryWrites=true&w=majority', {
@@ -17,10 +26,6 @@ mongoose.connect('mongodb+srv://divyanshu:itsmywish@cluster0.5wif7.mongodb.net/C
 }, () => {
     console.log("MongoDB Connected")
 })
-
-
-app.use('/api', Airports);
-app.use('/api', Flights);
 
 
 app.listen(5000, function () {
